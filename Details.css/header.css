@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.left span {
+    margin-right: 10px;
+}
+.center {
+    flex-grow: 1;
+    text-align: center;
+    
+}
