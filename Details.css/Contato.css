@@ -1,0 +1,95 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    background: url('sua-imagem.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px; /* Adiciona espaço para a navbar */
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+}
+
+.contact-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-container input, .contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: #0056b3;
+}

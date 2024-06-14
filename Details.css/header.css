@@ -107,6 +107,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    font-size: 9px;
 }
 
 header {
@@ -124,4 +125,8 @@ header {
     flex-grow: 1;
     text-align: center;
 
+}
+
+.img1 {
+    background-image: url(/Img/a.jpeg);
 }

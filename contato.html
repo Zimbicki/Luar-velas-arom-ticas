@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Details.css/header.css">
+    <link rel="stylesheet" href="../Details.css/footer.css">
+    <link rel="stylesheet" href="../Details.css/navbar.css">
+    <title>Contato - Velas Aromáticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="sidebarToggle" class="sidebar-toggle-input">
+        <label for="sidebarToggle" class="sidebar-toggle-btn">
+            <span class="icon">
+                <span class="line-wrapper">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </span>
+                <span class="cross-wrapper">
+                    <span class="cross cross1"></span>
+                    <span class="cross cross2"></span>
+                </span>
+            </span>
+        </label>
+        <div class="center">
+            <h1>Luar velas Aromáticas</h1>
+
+        </div>
+        <div class="right"></div>
+        </div>
+    </header>
+    <nav>
+
+        <ul class="lista">
+            <button class="transparent-button">Inicio</button>
+            
+            <button class="transparent-button">contato</button>
+            <button class="transparent-button">Sobre nós</button>
+            <button class="transparent-button">Pesquisa</button>
+            <button class="transparent-button">Conta</button>
+            <button class="transparent-button">Carrinho</button>
+        </ul>
+    </nav>
+    <div class="contact-container">
+        <h1>Contato</h1>
+        <form action="envia-contato.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
