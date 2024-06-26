@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luar | Velas Aromáticas</title>
+    <title>Produtos - RedStore | Loja Virtual Design</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-    <script src="./js/sidebar.js" type="application/javascript"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
+    <script src="./js/functions.js" type="application/javascript"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -373,175 +373,251 @@
     </script>
 </head>
 
-<body>
-    <main>
-        <div class="header !w-[100%] !h-[auto]">
-            <div class="flex flex-col !w-[100%] justify-center items-center">
-                <div
-                    class="navbar sc-1120:justify-between w-[1120px] sc-1120:!w-[100%] flex justify-center items-center">
-                    <nav class="text-right w-[100%] text-start sc-1120:hidden">
-                        <section class="text-[white] flex w-[100%] justify-start items-start">
-                            <div class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]"
-                                href="produtos.html">
-                                <aside class="flex justify-start gap-[10px] items-center">
+<body class="gradientPink">
+    <a href="https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as linhas da Luar.&type=phone_number&app_absent=0"
+        target="_blank" rel="noopener noreferrer"
+        class="bg-green-500 hover:bg-green-600 text-white py-4 px-5 rounded-full transition duration-300 shadow-lg fixed bottom-10 right-10 z-10 flex items-center justify-center">
+        <i class="bx bxl-whatsapp !text-[white] text-[30px]"></i>
+    </a>
+    <div class="header bg-[url(/images/background_luar_3.png)] !w-[100%] !h-[auto]">
+        <div class="flex flex-col !w-[100%] justify-center items-center">
+            <div class="navbar sc-1120:justify-between w-[1120px] sc-1120:!w-[100%] flex justify-center items-center">
+                <nav class="text-right w-[100%] text-start sc-1120:hidden">
+                    <section class="text-[white] flex w-[100%] justify-start items-start">
+                        <div
+                            class="text-[white] cursor-pointer hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
+                            <aside onclick="link('/index.html')" class="flex justify-start gap-[10px] items-center">
+                                <i class='bx bxs-home text-[25px] text-white '></i>
+                                <p class="text-[white]">Início</p>
+                        </div>
+                        <div
+                            class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
+                            <aside
+                                onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as linhas da Luar.&type=phone_number&app_absent=0')"
+                                class="flex cursor-pointer justify-start gap-[10px] items-center">
+                                <i class='bx bxl-whatsapp text-[25px] text-white '></i>
+                                <p class="text-[white]">Contato</p>
+                        </div>
+                    </section>
+                </nav>
+                <div class="table_center hidden sc-1120:block !w-[100%]">
+                    <i onclick="switch_menu()"
+                        class='fa z-[100] hover:cursor-pointer hidden sc-1120:block fa-solid fa-bars text-[white] text-[40px]'></i>
+                    <div id="drop-down"
+                        class="drop-down--active !w-[400px] sc-520:!w-[100%] opacity-[0] transition duration-300">
+                        <div class="drop-down__menu-box w-[300px] sc-520:!w-[100%] !px-[20px]" id="dropDown">
+                            <ul class="drop-down__menu rounded-[2px] shadow-default">
+                                <li data-name="profile" onclick="link('/index.html')"
+                                    class="drop-down__item cursor-pointer flex justify-between items-center transition duration-300">
+                                    <p class="text-[#85a2c1]">Início</p> <i class='bx text-[20px] bx-home'></i>
+                                </li>
+                                <li data-name="dashboard" onclick="link('/produtos.html')"
+                                    class="drop-down__item flex cursor-pointer justify-between items-center transition duration-300">
+                                    <p class="text-[#85a2c1]">Nossas Velas</p> <img src="/images/icons/candle_blue.png"
+                                        class='!w-[28px]'>
+                                </li>
+                                <li data-name="dashboard" onclick="link('/email.html')"
+                                    class="drop-down__item flex cursor-pointer justify-between items-center transition duration-300">
+                                    <p class="text-[#85a2c1]">E-mail</p> <i class='bx text-[20px] bxs-envelope'></i>
+                                </li>
+                                </li>
+                                <li data-name="dashboard"
+                                    onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')"
+                                    class="drop-down__item cursor-pointer flex justify-between items-center transition duration-300">
+                                    <p class="text-[#85a2c1]">Siga-nos!</p> <i class='bx text-[20px] bxl-instagram'></i>
+                                </li>
+                                </li>
 
-                                    <i class='bx bxs-home text-[25px] text-white '></i>
-                                    <p class="text-[white]">Início</p>
-                            </div>
-                            <div class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]"
-                                href="produtos.html">
-                                <aside class="flex justify-start gap-[10px] items-center">
-                                    <i class='bx bxl-whatsapp text-[25px] text-white '></i>
-                                    <p class="text-[white]">Contato</p>
-                            </div>
-                            <div class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]"
-                                href="produtos.html">
-                                <aside class="flex justify-start gap-[10px] items-center">
-                                    <i class='bx bxs-moon text-[25px] text-white '></i>
-                                    <p class="text-[white]">Sobre nós</p>
-                            </div>
-                        </section>
-                    </nav>
-                    <div class="table_center hidden sc-1120:block !w-[100%]">
-                        <i onclick="switch_menu()"
-                            class='fa z-[100] hover:cursor-pointer hidden sc-1120:block fa-solid fa-bars text-[white] text-[40px]'></i>
-                        <div id="drop-down"
-                            class="drop-down--active !w-[400px] sc-520:!w-[100%] opacity-[0] transition duration-300">
-                            <div class="drop-down__menu-box w-[300px] sc-520:!w-[100%] !px-[20px]" id="dropDown">
-                                <ul class="drop-down__menu rounded-[2px] shadow-default">
-                                    <li data-name="profile"
-                                        class="drop-down__item flex justify-between items-center transition duration-300">
-                                        <p class="text-[#85a2c1]">Início</p> <i class='bx text-[20px] bx-home'></i>
-                                    </li>
-                                    <li data-name="dashboard"
-                                        class="drop-down__item flex justify-between items-center transition duration-300">
-                                        <p class="text-[#85a2c1]">Contato</p> <i
-                                            class='bx text-[20px] bxl-whatsapp'></i>
-                                    </li>
-                                    <li data-name="dashboard"
-                                        class="drop-down__item flex justify-between items-center transition duration-300">
-                                        <p class="text-[#85a2c1]">Sobre nós</p> <i class='bx text-[20px] bxs-moon'></i>
-                                    </li>
-                                    </li>
-                                    <li data-name="dashboard"
-                                        class="drop-down__item flex justify-between items-center transition duration-300">
-                                        <p class="text-[#85a2c1]">Pesquisar</p> <i class='bx text-[20px] bx-search'></i>
-                                    </li>
-                                    </li>
-                                    <li data-name="dashboard" onclick="link('/email.html')"
-                                        class="drop-down__item flex justify-between items-center transition duration-300">
-                                        <p class="text-[#85a2c1]">E-mail</p> <i class='bx text-[20px] bx-user'></i>
-                                    </li>
-                                    </li>
-                                    <li data-name="dashboard"
-                                        class="drop-down__item flex justify-between items-center transition duration-300">
-                                        <p class="text-[#85a2c1]">Siga-nos!</p> <i
-                                            class='bx text-[20px] bxl-instagram'></i>
-                                    </li>
-                                    </li>
-
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
                     </div>
-                    <div class="logo sc-520:hidden">
-                        <a href="index.html" class="">
-                            <img src="./images/logo.png" width="125px" alt="Logo da loja">
-                        </a>
-                    </div>
-                    <nav class="text-right w-[100%] text-start sc-1120:hidden">
-                        <section
-                            class="text-[white] flex !w-[100%] sc-1120:justify-center sc-1120:items-center sc-1120:text-center justify-end items-end">
-                            <div class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]"
-                                href="produtos.html">
-                                <aside onclick="link('/email.html')"
-                                    class="flex justify-end sc-1120:justify-center sc-1120:items-center sc-1120:text-center gap-[10px] items-center">
-                                    <i class='bx bxs-envelope text-[25px] text-white '></i>
-                                    <p class="text-[white]">E-mail</p>
-                            </div>
-                            <div class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]"
-                                href="produtos.html">
-                                <aside
-                                    class="flex justify-end sc-1120:justify-center sc-1120:items-center sc-1120:text-center gap-[10px] items-center">
-                                    <i class='bx bxl-instagram text-[25px] text-white '></i>
-                                    <p class="text-[white]">Siga-nos!</p>
-                            </div>
-                            </aside>
-                        </section>
-                    </nav>
-                    <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
                 </div>
-                <main id="main-contact">
-                    <div class="text-white">
-                        <div class="wrapper">
-                            <form action="" method="post">
-                                <h2>Deixe seu contato:</h2>
-                                <div class="input-box text-white">
-                                    <input type="text" placeholder="Nome Completo" required />
-                                    <i class="bx bxs-user"></i>
-                                </div>
-                                <div class="input-box">
-                                    <input type="email" placeholder="E-mail" required />
-                                    <i class="bx bx-envelope"></i>
-                                </div>
-                                <div class="input-box">
-                                    <input type="tel" placeholder="Telefone" required />
-                                    <i class="bx bxs-phone"></i>
-                                </div>
-
-                                <div class="notification flex">
-                                  <div class="w-[100%] flex">
-                                    <input type="checkbox" />
-                                    <p class="text-white text-inline">Receber notificações no e-mail</p>
-                                  </div>
-
-                                </div>
-
-                                <button type="submit" class="btn">Enviar</button>
-                                <button type="submit" class="btn">Criar conta.</button>
-                            </form>
+                <div class="logo sc-520:hidden">
+                    <a href="index.html" class="">
+                        <img src="./images/logo.png" width="125px" alt="Logo da loja">
+                    </a>
+                </div>
+                <nav class="text-right w-[100%] text-start sc-1120:hidden">
+                    <section
+                        class="text-[white] flex !w-[100%] sc-1120:justify-center sc-1120:items-center sc-1120:text-center justify-end items-end">
+                        <div
+                            class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
+                            <aside onclick="link('/produtos.html')"
+                                class="flex cursor-pointer justify-end sc-1120:justify-center sc-1120:items-center sc-1120:text-center gap-[10px] items-center">
+                                <img src="/images/icons/candle.png" class='!w-[28px]'></i>
+                                <p class="text-[white]">Nossas Velas</p>
                         </div>
-                        <footer class="footer !w-[100%] mt-[100px]">
-                            <div class="footer-row">
-                                <section class="footer-col">
-                                    <h4>Um pouco da gente</h4>
-                                    <ul class="links">
-                                        <li><a href="#">Nossa história</a></li>
-                                        <li><a href="#">Competências</a></li>
-                                        <li><a href="#">Serviços</a></li>
-
-                                    </ul>
-                            </div>
-
-                            </section>
-
-                            <section class="footer-col">
-                                <h4>Explore</h4>
-                                <ul class="links">
-                                    <li><a href="#">Luar pet</a></li>
-                                    <li><a href="#">seu cheiro</a></li>
-                                </ul>
-                            </section>
-
-                            <section class="footer-col">
-                                <h4>Legal</h4>
-                                <ul class="links">
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Security</a></li>
-                            </section>
-
-                            </form>
-                            <div class="icons">
-                                <i class="bx bxl-facebook"></i>
-                                <i class="bx bxl-instagram"></i>
-                                <i class="bx bxl-whatsapp"></i>
-                            </div>
-                    </div>
+                        <div
+                            class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
+                            <aside onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')"
+                                class="flex justify-end cursor-pointer sc-1120:justify-center sc-1120:items-center sc-1120:text-center gap-[10px] items-center">
+                                <i class='bx bxl-instagram text-[25px] text-white '></i>
+                                <p class="text-[white]">Siga-nos!</p>
+                        </div>
+                        </aside>
+                    </section>
+                </nav>
+                <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
-            </footer>
+            <div class="px-[65px] sc-580:!px-[20px] mt-[120px] sc-380:!px-[0px] pb-[100px]">
+                <div class="col-2 !flex !justify-center !items-center flex-col">
+                    <h1 class="text-[white] sc-660:!text-[35px] font-[GothanBlack] text-center">Luz, aromas e
+                        <br>sensações para você!
+                    </h1>
+                    <p class="text-[white] sc-580:!text-[13px] text-center">Sucesso não é sempre sobre grandeza. É
+                        sobre
+                        consistência. Aromas
+                        envolventes e qualidade constante.
+                    </p>
+                    <a onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de fazer um orçamento!&type=phone_number&app_absent=0')"
+                        class="btn cursor-pointer hover:!text-[white] duration-300 transition">Fazer orçamento
+                        &#8594;</a>
+                </div>
+            </div>
+        </div>
+        <div class="ml-[30px] flex gap-[10px] pb-[20px]">
+            <i onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')"
+                class="bx cursor-pointer bxl-instagram text-[55px] !text-[white]"></i>
+            <i onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre a Luar Velas Aromáticas!&type=phone_number&app_absent=0')"
+                class="bx cursor-pointer bxl-whatsapp text-[55px] !text-[white]"></i>
+        </div>
+    </div>
+    <div class="small-container">
 
-            <script src="./js/script.js"></script>
-    </main>
+        <div class="row row-2">
+            <h2>Todos os Produtos</h2>
+            <select>
+                <option>Novidades</option>
+                <option>Menor preço</option>
+                <option>Maior preço</option>
+                <option>Mais Vendidos</option>
+                <option>Relevância</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <a href="produto.html">
+                    <img src="./images/velas/desjardins_4.jpg">
+                </a>
+                <h4>Aroma Desjardins</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/velas/happy_day_1.jpg">
+                <h4>Oh, happy day</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/velas/unique_1.jpg">
+                <h4>Aroma Unique</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/velas/vinho_&_especiarias.jpg">
+                <h4>Vinho & Especiarias</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    <!-------- Footer ------>
+    <div class="footer mt-[150px] !bg-[#13412bdc] w-[100%]">
+        <div class="w-[100%]">
+            <div class="flex w-[100%] flex sc-1280:flex-col sc-1280:items-center items-center">
+                <div class="footer-col-1 flex sc-1280:text-center sc-1280:justify-center flex-col">
+                    <h3 class="text-[30px]">Siga-nos</h3>
+                    <section class="flex flex-col">
+                        <div onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')"
+                            class="app-logo cursor-pointer flex sc-1280:justify-center justify-start gap-[10px] items-center">
+                            <p class="!text-[#F1F1D6] cursor-pointer">Entre em contato!</p>
+                            <i class="bx text-[white] bxl-instagram text-[20px] "></i>
+                        </div>
+                        <div onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas da Luar!&type=phone_number&app_absent=0')"
+                            class="app-logo cursor-pointer flex sc-1280:justify-center justify-start gap-[10px] items-center">
+                            <p class="!text-[#F1F1D6] cursor-pointer">Fale conosco no WhatsApp!</p>
+                            <i class="bx text-[white] bxl-whatsapp text-[20px] "></i>
+                        </div>
+                        <div onclick="link('mailto:support@example.com?subject=Suporte&body=Olá,%20preciso%20de%20ajuda%20com%20..')"
+                            class="app-logo cursor-pointer flex sc-1280:justify-center justify-start gap-[10px] items-center">
+                            <p class="!text-[#F1F1D6] cursor-pointer">Entre em contato no E-mail!</p>
+                            <i class="bx text-[white] bxl-gmail text-[20px] "></i>
+                        </div>
+                    </section>
+                </div>
+                <div class="footer-col-2 sc-1280:mt-[40px] !flex mt-[-20px] items-center sc-1280:flex-col">
+                    <img class="!w-[15%] !min-w-[15%]" src="./images/logo.png">
+                    <p class="!text-[#F1F1D6] sc-380:!w-[260px] !w-[300px]">Sucesso não é sempre sobre grandeza. É
+                        sobre
+                        consistência. Aromas envolventes e qualidade constante.</p>
+                </div>
+                <div class="flex sc-565:flex-col sc-1280:mt-[40px]">
+                    <div class="footer-col-3">
+                        <h3>Links Úteis</h3>
+                        <ul class="!text-[#F1F1D6]">
+                            <li class="cursor-pointer" onclick="link('/index.html')">Início</li>
+                            <li class="cursor-pointer" onclick="link('/produtos.html')">Produtos</li>
+                            <li class="cursor-pointer"
+                                onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de solicitar um orçamento com vocês!&type=phone_number&app_absent=0')">
+                                Solicite um orçamento</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Redes Sociais</h3>
+                        <ul class="!text-[#F1F1D6]">
+                            <li class="cursor-pointer"
+                                onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')">
+                                Instagram
+                            </li>
+                            <li class="cursor-pointer"
+                                onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas da Luar!&type=phone_number&app_absent=0')">
+                                WhatsApp</li>
+                            <li class="cursor-pointer"
+                                onclick="link('mailto:support@example.com?subject=Suporte&body=Olá,%20preciso%20de%20ajuda%20com%20..')">
+                                E-mail</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright !text-[#F1F1D6]">Copyright 2024 - Equipe Estrela (Ilha 6)</p>
+        </div>
+        </main>
 </body>
 
 </html>

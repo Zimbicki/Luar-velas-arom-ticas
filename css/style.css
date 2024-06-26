@@ -58,7 +58,7 @@ p {
 
 .col-2 {
     flex-basis: 50%;
-    min-width: 300px;
+    min-width: 225px;
 }
 
 .col-2 img {
@@ -87,7 +87,6 @@ p {
 }
 
 .header {
-    background: url(/images/background_luar.jpg) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -99,7 +98,7 @@ p {
 
 .col-3 {
     flex-basis: 30%;
-    min-width: 250px;
+    min-width: 225px;
     margin-bottom: 30px;
 }
 
@@ -163,10 +162,20 @@ h4 {
     transform: translateY(-5px);
 }
 
+.gradientPink {
+    background: radial-gradient(#fff, #ffcbcb) !important;
+}
+
 /*----------- Oferta -----------*/
 
 .offer {
     background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.about {
+    background: radial-gradient(#fff, #d9ffd6);
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -808,6 +817,5 @@ form a {
 
 
 .header_product {
-    background: radial-gradient(#fff, #ffd6d6);
-
+    background: radial-gradient(#fff, #ffd6d6) !important;
 }
